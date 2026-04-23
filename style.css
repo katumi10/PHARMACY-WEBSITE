@@ -55,7 +55,7 @@ body {
 .search-box {
   display: flex;
   width: 40%;
-  border: 1px solid #ddd;
+  border: 1px solid #332d2d;
   border-radius: 6px;
   overflow: hidden;
 }
@@ -150,22 +150,27 @@ body {
 /* HERO */
 .hero {
   display: flex;
-  /* justify-content:flex; */
-  flex-direction: row;
+  justify-content:space-between;
   align-items: center;
-  padding: 10px 140px;
+  padding: 20px 60px;
   background: #eef5f0;
   border-radius: 10px;
-  margin: 20px 40px;
+  margin: 10px auto;
+  max-width: 1200px;
+  width: 100%;
+  /* position: relative; */
+  /* top: -50px; */
 }
 
 /* TEXT */
 .hero-text {
+  flex: 1;
   max-width: 50%;
+  margin-bottom: 200px;
 }
 
 .hero-text h1 {
-  font-size: 40px;
+  font-size: 50px;
   color: #0b7a3e;
   margin-bottom: 15px;
 }
@@ -181,7 +186,6 @@ body {
   vertical-align: baseline;
   position: relative;
   top: 5px;
-
 }
 .hero-text p {
   color: #555;
@@ -234,23 +238,30 @@ body {
   gap: 20px;
   font-size: 14px;
   color: #333;
+  flex-wrap: wrap;
 }
 
 /* IMAGE */
 .hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
   position: relative;
 }
 
 .hero-image img {
-  width: 100%;
-  height:auto auto;
+  /* max-width: 550px; */
+  width: 160%;
+  height:auto;
+  position:relative ;
+  top:-80px
 }
 
 /* BADGE */
 .badge {
   position: absolute;
-  bottom: 70px;
-  right: 60px;
+   bottom: 200px; 
+  right: -70px;
   background: #f5c542;
   padding: 15px;
   width: 110px;
@@ -264,33 +275,78 @@ body {
 }
 
 
+@media (max-width: 768px) {
 
-/* Responsive Hero */
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+  }
 
-@media (max-width: 900px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .search-box {
+    width: 100%;
+    order: 3;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .menu-bar {
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .menu-bar a {
+    white-space: nowrap;
+  }
+
+  /* HERO */
   .hero {
     flex-direction: column;
     text-align: center;
+    padding: 25px 20px;
   }
 
   .hero-text {
     max-width: 100%;
   }
 
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-features {
+    justify-content: center;
+  }
+
   .hero-image img {
-    width: 100%;
+    max-width: 300px;
     margin-top: 20px;
   }
-}
 
-/* Responsive Navbar  */
-@media (max-width: 768px) {
-  .search-box {
-    width: auto;
+  .badge {
+    position: static;
+    margin: 15px auto;
   }
-
-  .menu-bar {
-    overflow-x: auto;
-    gap: 15px;
+}
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 100%;
+    max-width: 320px;
+    transform: none;
   }
 }
