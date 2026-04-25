@@ -427,7 +427,7 @@ body {
 .company-qualities{
     gap: 20px;
   padding: 20px 40px;
-  backgroundrgb(248, 245, 245);
+  background: rgb(248, 245, 245);
   margin: 20px auto;
   max-width: 1200px;
   border-radius: 10px;
@@ -455,3 +455,62 @@ body {
   gap: 10px;
    border-right: 2px solid rgb(218, 212, 212);
 }
+
+
+.momo-logo > img{
+  width: 150px;
+  height: 90px;
+}
+.momo-logo{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #0b7a3e;
+  font-weight: bold;
+  margin: 20px auto;
+ 
+}
+.company-info{
+  display: flex;
+    padding: 20px 85px;
+    margin:20px auto;
+  gap: 20px;
+  background-color:rgb(227, 245, 227) ;
+}
+
+.offer{
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  background: rgb(248, 245, 245);
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+.help-desk{
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+  background: rgb(248, 245, 245);
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+}
+.image-picture > img{
+  width: 120px;
+  height: 100px;
+
+}
+
+.footer-content{
+  display: flex;
+  gap: 20px;
+  
+  background: #0b7a3e;
+  color: white;
+
+
+}
+.footer-content > div{
+  padding: 20px 40px;
+} 
