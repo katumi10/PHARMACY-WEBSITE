@@ -423,3 +423,34 @@ body {
 .category-item > button:hover {
   background: #095a2f;
 }
+
+.company-qualities{
+    gap: 20px;
+  padding: 20px 40px;
+  background: white;
+  margin: 20px auto;
+  max-width: 1200px;
+  border-radius: 10px;
+  display: flex;
+  gap: 35px;
+}
+
+.img-svg{
+  color: green;
+  object-fit: cover;
+  
+  overflow: hidden;
+  position: relative;
+  right: 20px
+  
+ 
+}
+.img-svg > img{
+  width: 50px;
+  height: 50px;
+}
+.product-name{
+  display: flex;
+  gap: 10px;
+   border-right: 2px solid rgb(218, 212, 212);
+}
