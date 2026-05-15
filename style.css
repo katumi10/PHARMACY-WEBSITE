@@ -455,7 +455,7 @@ body {
   .navbar {
     flex-wrap: wrap;
     gap: 10px;
-    padding: 15px;
+    padding:10px 15px;
   }
 
   .search-box {
@@ -471,7 +471,7 @@ body {
   .menu-bar {
     overflow-x: auto;
     gap: 15px;
-    padding: 10px;
+    padding: 10px 1px;
   }
 
   .menu-bar a {
@@ -480,41 +480,50 @@ body {
 
   /* HERO */
   .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 25px 20px;
+    flex-direction: row;
+    border-radius: 20px;
+    /* text-align: center; */
+    padding: 25px;
+    /* gap: 10px; */
+    /* align-items: center; */
+    margin: 20px 15px;
   }
 
   .hero-text {
     max-width: 100%;
+    flex:1;
   }
 
   .hero-text h1 {
-    font-size: 28px;
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
   }
 
   .hero-buttons {
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
   }
+.hero-buttons button{
+  width: 100%;
+}
 
   .hero-features {
-    justify-content: center;
+    /* justify-content: center; */
+  flex-direction: column;
+   align-items: cente
   }
 
   .hero-image img {
-    max-width: 300px;
-    margin-top: 20px;
+    width: 100%;
+    max-width:3200px;
+    margin-top: -150px;
   }
 
   .badge {
     position: static;
-    margin: 15px auto;
+    margin: 15px auto 0;
   }
 }
-@media (max-width: 768px) {
-  .hero-image img {
-    width: 100%;
-    max-width: 320px;
-    transform: none;
-  }
-}
+
+

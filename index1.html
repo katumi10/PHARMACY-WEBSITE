@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PharmaGH</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="top-left">
+      <span><i class="fa-solid fa-cube"></i>Fast delivery in Accra & nationwide</span>
+    </div>
+
+    <div class="top-right">
+      <span><i class="fa-brands fa-whatsapp"></i>WhatsApp us :050123 4567</span>
+      <span><i class="fa-solid fa-location-dot"></i>Track Order</span>
+    </div>
+  </div>
+
+  <div class="navbar">
+    <!-- <i class="fa-solid fa-bars" style = "font-size: 28px"></i> -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+      </div>
+    <div class="logo">
+      <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" alt="logo">
+
+      <div class="logo-text">
+        <h2>PharmaGH</h2>
+        <p>Your Health. Our Priority.</p>
+      </div>
+    </div>
+  <div class="search-bar">
+      <input type="text" placeholder="Search for medicines, products...">
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+
+    <div class="nav-actions">
+      <div><i class="fa-regular fa-user"></i><span>Login / Register</span></div>
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i><span> Cart</span>
+        <div class="cart-count">2</div>
+      </div>
+    </div>
+  </div>
+      <div class="search-bar1">
+      <input type="text" placeholder="Search for medicines, products...">
+      <button class="search-btn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+  <div class="menu">
+    <a href="index1.html" class="active">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+    <a href="#" 
+      <i class="fa-solid fa-shopping-bag"></i>
+      <span>Shop</span>
+    </a>
+    <a href="#" >
+      <i class="fa-regular fa-clipboard"></i>
+      <span>Prescriptions</span>
+    </a>
+    <a href="#">
+      <i class="fa-solid fa-heart-pulse"></i>
+      <span>Health Tips</span>
+    </a>
+       <a href="#">
+      <i class="fa-solid fa-ellipsis"></i>
+      <span>More</span>
+    </a>
+    <!-- <a href="#">About Us</a>
+    <a href="#">Contact Us</a> -->
+  </div>
+
+  <div class="container">
+
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Your Trusted Online Pharmacy <span> in Ghana 🇬🇭</span></h1>
+
+        <p>
+          Quality medicines, health products and personal care items delivered to your door.
+        </p>
+
+        <div class="hero-buttons">
+          <button class="btn primary-btn">Shop Medicines <i class="fa-solid fa-arrow-right"></i></button>
+          <button class="btn secondary-btn">Upload Prescription <i class="fa-solid fa-arrow-up-from-bracket"></i></button>
+        </div>
+
+        <div class="hero-features">
+          <div><i class="fa-solid fa-shield"></i> Genuine Products</div>
+          <div><i class="fa-solid fa-award"></i> Licensed Pharmacy</div>
+          <div><i class="fa-solid fa-lock"></i> Secure Payments</div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="Assets/hero.png" alt="hero image">
+
+        <div class="delivery-badge">
+          Fast Delivery Nationwide
+          <i class="fa-solid fa-truck"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="section">
+      <div class="section-header">
+        <h2>Shop by Category</h2>
+        <a href="#">View all categories</a>
+      </div>
+
+      <div class="category-grid">
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/822/822143.png">
+          <h3>Pain Relief</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png">
+          <h3>Malaria</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2674/2674505.png">
+          <h3>Vitamins & Supplements</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/2933/2933820.png">
+          <h3>Baby Care</h3>
+        </div>
+
+        <div class="category-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3140/3140341.png">
+          <h3>Personal Care</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <h2>Best Selling Products</h2>
+        <a href="#">View all products</a>
+      </div>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/61m7M6zH1DL.jpg">
+          <h3>Panadol Extra</h3>
+          <div class="product-price">₵ 15.00</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/61i7bJ5P9SL.jpg">
+          <h3>Amatem Forte</h3>
+          <div class="product-price">₵ 5.00</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/61wP9h8WZUL.jpg">
+          <h3>Vitamin C 1000mg</h3>
+          <div class="product-price">₵ 25.00</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/61-r9zOKBCL.jpg">
+          <h3>Dettol Antiseptic</h3>
+          <div class="product-price">₵ 40.00</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+          <img src="https://m.media-amazon.com/images/I/71P5vR6m0AL.jpg">
+          <h3>BabyLove Diapers</h3>
+          <div class="product-price">₵ 60.00</div>
+          <button class="add-cart">Add to Cart</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="support-boxes">
+
+      <div class="support-card">
+        <i class="fa-solid fa-truck"></i>
+        <div>
+          <h3>Fast Delivery</h3>
+          <p>Quick delivery in Accra & nationwide</p>
+        </div>
+      </div>
+
+      <div class="support-card">
+        <i class="fa-regular fa-credit-card"></i>
+        <div>
+          <h3>Secure Payments</h3>
+          <p>Pay safely with MoMo, card or cash on delivery</p>
+        </div>
+      </div>
+
+      <div class="support-card">
+        <i class="fa-solid fa-prescription"></i>
+        <div>
+          <h3>Prescription Support</h3>
+          <p>Upload prescription and our pharmacist will assist</p>
+        </div>
+      </div>
+
+      <div class="support-card">
+        <i class="fa-solid fa-headset"></i>
+        <div>
+          <h3>Customer Support</h3>
+          <p>We're here to help you every step of the way</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="payment-chat">
+
+      <div class="payment-box">
+        <h2>We Accept</h2>
+
+        <div class="payment-logos">
+          <span>MTN MoMo</span>
+          <span>Vodafone Cash</span>
+          <span>Visa</span>
+          <span>Mastercard</span>
+        </div>
+      </div>
+
+      <div class="chat-box">
+        <div>
+          <h2>Need Help? Chat with us on WhatsApp</h2>
+
+          <button class="chat-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            050 123 4567
+          </button>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=1000&auto=format&fit=crop" alt="support">
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+
+    <div class="footer-grid">
+
+      <div>
+        <h3>PharmaGH</h3>
+        <p>
+          Your trusted online pharmacy in Ghana providing genuine medicines and health products with excellent care.
+        </p>
+
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-tiktok"></i>
+          <i class="fa-brands fa-whatsapp"></i>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Prescriptions</li>
+          <li>Health Tips</li>
+          <li>About Us</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Customer Service</h3>
+        <ul>
+          <li>Track Order</li>
+          <li>Returns & Refunds</li>
+          <li>FAQs</li>
+          <li>Shipping Policy</li>
+          <li>Terms & Conditions</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Us</h3>
+        <p><i class="fa-solid fa-phone"></i> 050 123 4567</p>
+        <p><i class="fa-solid fa-envelope"></i> info@pharmagh.com</p>
+        <p><i class="fa-solid fa-location-dot"></i> 123 Health Street, Accra, Ghana</p>
+      </div>
+
+      <div>
+        <h3>Licensed Pharmacy</h3>
+        <p>PharmaGH is a licensed pharmacy in Ghana.</p>
+        <p>License No: FDA/Pharm/2023/12345</p>
+      </div>
+
+    </div> -->
+
+    <!-- <div class="copyright">
+      © 2024 PharmaGH. All Rights Reserved.
+    </div>
+
+  </footer> -->
+
+    <script>
+    function toggleMenu() {
+      document.querySelector('.menu').classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
